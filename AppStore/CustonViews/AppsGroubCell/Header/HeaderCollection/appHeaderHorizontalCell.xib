@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="appHeaderHorizontalController" id="gTV-IL-0wX" customClass="appHeaderHorizontalCell" customModule="AppStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FaceBook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhP-RY-99f">
+                        <rect key="frame" x="0.0" y="12" width="76" height="14.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep up with friend is faster than ever" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kL9-yl-CU5">
+                        <rect key="frame" x="0.0" y="38.5" width="414" height="67"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="67" id="5Ia-bT-rQq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xV4-a3-xfC">
+                        <rect key="frame" x="0.0" y="117.5" width="414" height="182.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y8f-jr-pe6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="182.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182.5" id="GHe-bm-FP5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="kL9-yl-CU5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HQk-0s-mbG"/>
+                <constraint firstAttribute="trailing" secondItem="xV4-a3-xfC" secondAttribute="trailing" id="IqW-Jf-L2o"/>
+                <constraint firstAttribute="trailing" secondItem="kL9-yl-CU5" secondAttribute="trailing" id="Kuz-O9-roU"/>
+                <constraint firstItem="xV4-a3-xfC" firstAttribute="top" secondItem="kL9-yl-CU5" secondAttribute="bottom" constant="12" id="Prd-pZ-OMa"/>
+                <constraint firstAttribute="bottom" secondItem="xV4-a3-xfC" secondAttribute="bottom" id="UGW-qP-NkR"/>
+                <constraint firstItem="kL9-yl-CU5" firstAttribute="top" secondItem="OhP-RY-99f" secondAttribute="bottom" constant="12" id="ecG-vm-HOr"/>
+                <constraint firstItem="OhP-RY-99f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="oCg-PI-jEa"/>
+                <constraint firstItem="xV4-a3-xfC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="otr-xU-xkX"/>
+                <constraint firstItem="OhP-RY-99f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vgr-Mg-4SK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="234" height="196"/>
+            <connections>
+                <outlet property="discrabtion" destination="kL9-yl-CU5" id="XMe-Bl-kXr"/>
+                <outlet property="iamge" destination="Y8f-jr-pe6" id="3kW-hw-5zQ"/>
+                <outlet property="name" destination="OhP-RY-99f" id="bcI-Gp-pFj"/>
+            </connections>
+            <point key="canvasLocation" x="89.855072463768124" y="22.767857142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

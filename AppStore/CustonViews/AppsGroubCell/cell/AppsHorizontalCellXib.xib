@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="appHeaderHorizontalController" reuseIdentifier="AppsHorizontal" id="uP4-rP-tgn" customClass="AppsHorizontalCellXib" customModule="AppStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="64"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="sXj-dn-uw5">
+                        <rect key="frame" x="4" y="0.0" width="64" height="64"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-store" translatesAutoresizingMaskIntoConstraints="NO" id="8Pq-xm-oYJ">
+                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="CkR-gs-jIY"/>
+                                    <constraint firstAttribute="width" constant="64" id="YR5-7U-zSK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbE-Nj-4c6">
+                        <rect key="frame" x="286" y="16" width="80" height="32"/>
+                        <color key="backgroundColor" red="0.94129902119999997" green="0.94046008589999996" blue="0.93732529880000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="CC3-To-gj5"/>
+                            <constraint firstAttribute="height" constant="32" id="G2r-xw-ZPo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <state key="normal" title="GET"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="MHa-lr-N7W">
+                        <rect key="frame" x="84" y="0.0" width="198" height="64"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="App Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MhL-sP-1vb">
+                                <rect key="frame" x="0.0" y="0.0" width="92" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="companyName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uW0-ZR-3Vp">
+                                <rect key="frame" x="0.0" y="48" width="90.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="sXj-dn-uw5" secondAttribute="bottom" id="8uU-BD-Khf"/>
+                <constraint firstItem="UbE-Nj-4c6" firstAttribute="top" secondItem="uP4-rP-tgn" secondAttribute="top" constant="16" id="9rH-35-AK3"/>
+                <constraint firstAttribute="trailing" secondItem="UbE-Nj-4c6" secondAttribute="trailing" id="HON-qu-J8j"/>
+                <constraint firstItem="sXj-dn-uw5" firstAttribute="top" secondItem="uP4-rP-tgn" secondAttribute="top" id="N0U-Sk-uS0"/>
+                <constraint firstItem="UbE-Nj-4c6" firstAttribute="leading" secondItem="MHa-lr-N7W" secondAttribute="trailing" constant="4" id="OT9-pb-T9p"/>
+                <constraint firstAttribute="bottom" secondItem="MHa-lr-N7W" secondAttribute="bottom" id="Qaa-6E-vx7"/>
+                <constraint firstItem="MHa-lr-N7W" firstAttribute="leading" secondItem="sXj-dn-uw5" secondAttribute="trailing" constant="16" id="Rmj-cK-jUr"/>
+                <constraint firstItem="MHa-lr-N7W" firstAttribute="top" secondItem="uP4-rP-tgn" secondAttribute="top" id="xhw-nI-cXK"/>
+                <constraint firstItem="sXj-dn-uw5" firstAttribute="leading" secondItem="uP4-rP-tgn" secondAttribute="leading" constant="4" id="yHQ-1B-AIg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZXI-BK-tcl"/>
+            <size key="customSize" width="169" height="22"/>
+            <connections>
+                <outlet property="appName" destination="MhL-sP-1vb" id="MZS-Ai-PIV"/>
+                <outlet property="companyName" destination="uW0-ZR-3Vp" id="65I-9I-SHz"/>
+                <outlet property="imageView" destination="8Pq-xm-oYJ" id="Heo-QJ-DGJ"/>
+            </connections>
+            <point key="canvasLocation" x="7" y="94"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="app-store" width="16" height="16"/>
+    </resources>
+</document>

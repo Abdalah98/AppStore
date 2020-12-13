@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AppsPageHeader" id="TEA-IA-miV" customClass="AppsPageHeaderReusableView" customModule="AppStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dfl-p6-EMK">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SSP-MT-ij7">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dfl-p6-EMK" firstAttribute="top" secondItem="TEA-IA-miV" secondAttribute="top" id="DtS-pA-1NB"/>
+                <constraint firstItem="dfl-p6-EMK" firstAttribute="leading" secondItem="qOE-nV-IsG" secondAttribute="leading" id="Ep9-M9-XIc"/>
+                <constraint firstItem="dfl-p6-EMK" firstAttribute="bottom" secondItem="qOE-nV-IsG" secondAttribute="bottom" id="FJZ-W1-A3O"/>
+                <constraint firstItem="dfl-p6-EMK" firstAttribute="trailing" secondItem="qOE-nV-IsG" secondAttribute="trailing" id="gfc-0g-buI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="qOE-nV-IsG"/>
+            <connections>
+                <outlet property="CollectionView" destination="dfl-p6-EMK" id="sag-g2-tJP"/>
+            </connections>
+            <point key="canvasLocation" x="133.33333333333334" y="129.91071428571428"/>
+        </collectionReusableView>
+    </objects>
+</document>

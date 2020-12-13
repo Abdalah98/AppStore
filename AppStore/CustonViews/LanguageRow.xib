@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Language" id="gTV-IL-0wX" customClass="LanguageRow" customModule="AppStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GB-Rk-JCn">
+                        <rect key="frame" x="16" y="10" width="94" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Fex-gw-ryK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="156"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="G7Q-ye-NbK">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAp-rr-GnX">
+                        <rect key="frame" x="16" y="0.0" width="382" height="0.5"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="kRV-bU-EBd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="8GB-Rk-JCn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="0sO-wJ-KX8"/>
+                <constraint firstItem="8GB-Rk-JCn" firstAttribute="top" secondItem="EAp-rr-GnX" secondAttribute="bottom" constant="9.5" id="2Es-7w-aoD"/>
+                <constraint firstAttribute="bottom" secondItem="Fex-gw-ryK" secondAttribute="bottom" id="3Ka-Mf-OcX"/>
+                <constraint firstItem="EAp-rr-GnX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="3zu-Yl-UHB"/>
+                <constraint firstAttribute="trailing" secondItem="EAp-rr-GnX" secondAttribute="trailing" constant="16" id="6DH-2R-7ZZ"/>
+                <constraint firstAttribute="trailing" secondItem="Fex-gw-ryK" secondAttribute="trailing" id="gkD-bd-kr0"/>
+                <constraint firstItem="Fex-gw-ryK" firstAttribute="top" secondItem="8GB-Rk-JCn" secondAttribute="bottom" constant="10" id="nBA-N2-rmc"/>
+                <constraint firstItem="EAp-rr-GnX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vFO-Cg-AXO"/>
+                <constraint firstItem="Fex-gw-ryK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vOs-XB-nHA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="440" height="56"/>
+            <connections>
+                <outlet property="LanguageRowCollection" destination="Fex-gw-ryK" id="21V-4h-CUA"/>
+            </connections>
+            <point key="canvasLocation" x="-23.188405797101453" y="84.375"/>
+        </collectionViewCell>
+    </objects>
+</document>
