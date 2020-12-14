@@ -1,4 +1,18 @@
 # AppStore
+# Podcast-swift
+	•	searching for available AppStore on iTunes
+https://rss.itunes.apple.com/en-us
+
+# Features
+	•	 Support Dark Mode & light mode 
+	•	 Searching through  by name App.
+	•	 Downloading & Caching Image
+  •	 Animation
+
+	•	 Planning our Network Calls - API, JSON, Model
+
+  
+
 
 #### UI
 #### Today
