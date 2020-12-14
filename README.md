@@ -1,15 +1,17 @@
 # AppStore
-# Podcast-swift
-	•	searching for available AppStore on iTunes
-https://rss.itunes.apple.com/en-us
-
-# Features
+### Features
+	•	 Use the ITunse API - No authentication needed  https://rss.itunes.apple.com/en-us
+	•	 DispatchGroup Syncing
 	•	 Support Dark Mode & light mode 
 	•	 Searching through  by name App.
 	•	 Downloading & Caching Image
-  •	 Animation
-
+	•	 Custom Animations
+	•	 Child View Controllers
+	•	 Snapping Flow Layout
+	•	 Asynchronous Data Fetch
 	•	 Planning our Network Calls - API, JSON, Model
+
+  
 
   
 
