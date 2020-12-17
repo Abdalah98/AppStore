@@ -10,8 +10,10 @@
 	•	 Snapping Flow Layout
 	•	 Asynchronous Data Fetch
 	•	 Planning our Network Calls - API, JSON, Model
+        •	 singleton
+        •	 and many tools used
 
-  
+ 
 
   
 
